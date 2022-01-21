@@ -18,8 +18,6 @@
 ##
 # Imports python modules
 from os import listdir
-from .get_input_args import in_args
-
 # TODO 2: Define get_pet_labels function below please be certain to replace None
 #       in the return statement with results_dic dictionary that you create 
 #       with this function
@@ -41,7 +39,7 @@ def get_pet_labels(image_dir):
       List. The list contains for following item:
          index 0 = pet image label (string)
     """
-    name_list = listdir(in_args.dir)
+    name_list = listdir(image_dir)
     results_dic = {}
     name_pet = ""
 
